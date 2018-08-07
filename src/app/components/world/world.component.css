@@ -1,0 +1,85 @@
+.world-bg {
+  background-color: #f5b8bf;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+/* Sky */
+.sky-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(#192636, #354b62);
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+/* Stars */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* Sun */
+.sun {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: radial-gradient(#f096a2, #f38da2);
+  width: 30vw;
+  height: 15vw;
+  border-top-left-radius: 30vw;
+  border-top-right-radius: 30vw;
+  z-index: 1;
+}
+/* Ground */
+.ground-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(#f5b8bf, #e3b59b);
+  text-align: center;
+}
+/* Road */
+.road-bg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+  -webkit-clip-path: polygon(60% 0, 40% 0, 0 100%, 100% 100%);
+  clip-path: polygon(60% 0, 40% 0, 0 100%, 100% 100%);
+  background: linear-gradient(#7f8196, #30465d);
+  background-image: -webkit-linear-gradient(#7f8196 0%, #30465d 100%);
+  background-image: -o-linear-gradient(#7f8196 0%, #30465d 100%);
+  background-image: linear-gradient(#7f8196 0%, #30465d 100%);
+}
+/* Cloud */
+.cloud {
+	width: 350px; height: 120px;
+	background: #c9f5f8;
+	border-radius: 100px;
+	position: relative;
+	margin: 150px 50px;
+}
+.cloud:after, .cloud:before {
+	content: '';
+	position: absolute;
+	background: #c9f5f8;
+	z-index: 1
+}
+.cloud:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+	border-radius: 100px;
+}
+.cloud:before  {
+	width: 180px; height: 180px;
+	top: -90px; right: 50px;
+	border-radius: 200px;
+}
+

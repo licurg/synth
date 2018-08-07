@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files*/
+
+@font-face {
+  font-family: 'SaucerBB';
+  src: url('./assets/fonts/SaucerBB.ttf');
+}
+
+.main-logo{
+  font-family: 'SaucerBB', sans-serif;
+}
